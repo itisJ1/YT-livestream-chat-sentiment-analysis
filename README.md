@@ -33,10 +33,10 @@ How many messages do you want to see the result of: 5
 ```
 Output (example):
 ```bash
-stay young, [{'label': 'positive', 'score': 0.98}]
-Priya umm?, [{'label': 'neutral', 'score': 0.65}]
-lol, [{'label': 'positive', 'score': 0.87}]
-yo, [{'label': 'neutral', 'score': 0.72}]
+wow, [{'label': 'positive', 'score': 0.98}]
+video se traba, [{'label': 'negative', 'score': 0.87}]
+lol, [{'label': 'positive', 'score': 0.67}]
+formidable, [{'label': 'positive', 'score': 0.95}]
 thanks, [{'label': 'positive', 'score': 0.99}]
 ```
 ## ⚠️Note
