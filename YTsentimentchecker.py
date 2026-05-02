@@ -1,0 +1,13 @@
+from chat_downloader import ChatDownloader
+from transformers import pipeline
+from itertools import islice
+
+
+url = input("Paste url of live livestream (YT): ")
+n = int(input("How many messages do you want to see the result of: "))
+downloader = ChatDownloader()
+chat = downloader.get_chat(url, message_groups=['messages'])
+pipe = pipeline("text-classification", model="tabularisai/multilingual-sentiment-analysis")
+
+for message in islice(chat, n):
+    print(f"{message['message']}, {pipe(message['message'])}")
